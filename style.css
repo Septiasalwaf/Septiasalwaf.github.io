@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Shrikhand&family=Zeyada&display=swap');
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+ 
+}
+.title{
+    text-align: center;
+    margin-top: 110px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*header*/
+
+.fContainer{
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    width: 100%;
+    height: 110vh;
+
+}
+
+/*navbar*/
+.navbar-logo {
+    width: 45px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+.wrapper{
+    display: flex;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+    height: 45px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation>li{
+    list-style-type: none;
+    padding: 15px;
+}
+.navigation>li>a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border: 1px solid rgba(141, 110, 87, 0);
+}
+.navigation>li>a:hover{
+    color: rgb(141, 110, 87);
+    border: 3px solid rgb(141, 110, 87);
+}
+/*home bg*/
+#latar{
+    background-image: url(img/bg_cafe.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: transparent;
+    height: 100vh;
+}
+.transparan{
+    position: relative;
+    top: 19%;
+    background-color: rgba(51, 28, 12, 0.685);
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.teks{
+    text-align: left;
+}
+.teks>h2{
+    margin-left: 30%;
+    font-family: 'Shrikhand', cursive;
+    font-size: 80px;
+    color: white;
+}
+.teks>h3{
+    text-align: center;
+    font-family: 'Shrikhand', cursive;
+    font-size: 90px;
+    color: white;
+}
+
+.teks>p{
+    font-family: 'Kalam', cursive;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 170px;
+    margin-right: 160px;
+    font-size: 20px;
+    color: white;
+}
+/*menu*/
+
+.title>h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 40px;
+}
+.container{
+    max-width: 1100px;
+    width: 100%;
+    padding: 40px 15px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    /*margin-top: 70px;
+    margin-left: 100px; 
+    justify-content: space-between;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;  
+    box-sizing: border-box;
+    text-align: center;
+}
+.container .card{
+    margin: 50px 0;
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+    margin-left: 50px;
+}
+
+.container .card img{
+    width: 100px;
+    height: 130px;
+    object-fit: cover;
+    margin-left: 10px;
+    object-fit: cover;
+    border: 1px solid #eee;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.container .card h2{
+    font-family: 'Zeyada', cursive;
+    text-align: center;
+    margin: 8px 0;
+}
+.container .card p{
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    line-height: 23px;
+    margin: 0 10px;
+}
+.container .card h3{
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+/* reservasi */
+.banner{
+    min-height: 100vh;
+    background-color: rgba(51, 28, 12, 0.685);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    counter-reset: #fff;
+    padding-bottom: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+.card-img{
+    background: url(img/12.jpg) center/ cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+}
+.card-content{
+    background: #fff;
+    height: 330px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Shrikhand', cursive;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type=text], form input[type=number],form input::placeholder,select{
+    color: #9a9a9a;
+}
+form input[type=submit]{
+    color: #fff;
+    background: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type=submit]:hover{
+    opacity: 0.9;
+}
+/*galery*/
+.title-galery>h1{
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.container-galery{
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    padding: 40px 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+.container-galery.galery{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px 15px;
+}
+.container-galery .galery>img{
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border: 1px solid #eee;
+    box-shadow: 1px 2px 3px #ddd;
+    border-radius: 10px;
+}
+
+/*about*/
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.image>img{
+    max-width: 100%;
+    height: auto;
+}
+.content{
+    max-width: 1100px;
+    width: 100%;
+    padding: 40px 15px;
+    background-color: rgba(37, 22, 12, 0.795);
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1);
+    margin-right: 30px;
+    border-radius: 10px;
+}
+.content>h1{
+   text-align: center;
+    color:white;
+    font-family: 'Shrikhand', cursive;
+}
+.content>h3{
+    color: white;
+    margin-left: 20px;
+    margin-top: 39px;
+    margin-bottom: 1px;
+    font-family: 'Zeyada', cursive;
+    font-size: 25px;
+}
+.content>p{
+    color: white;
+    font-family: 'Kalam', cursive;
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 18px;
+}
+
+/* footer */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.footer{
+    box-sizing: border-box;
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+form input.kedua{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 135px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 24px;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: #6f4e3f;
+}
